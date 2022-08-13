@@ -93,10 +93,20 @@ MAX_CONN_AGE = 600
 
 LOGIN_REDIRECT_URL = "/"
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd34glq85h3mda0',
+        'USER': 'mrikeibdgjosml',
+        'PASSWORD': '7cc7ceaf9537a667700ecbc193f517a817bfa81d5dc529aedf363631ba6a6b02',
+        'HOST': 'ec2-44-206-197-71.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
