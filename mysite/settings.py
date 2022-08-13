@@ -17,6 +17,7 @@ from django.test.runner import DiscoverRunner
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+TEMPLATE_DIR = (Path.joinpath(BASE_DIR, "templates"))
 
 IS_HEROKU = "DYNO" in os.environ
 
@@ -69,7 +70,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / "templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -89,6 +90,8 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 MAX_CONN_AGE = 600
+
+LOGIN_REDIRECT_URL = "/"
 
 DATABASES = {
     'default': {
