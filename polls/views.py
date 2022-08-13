@@ -2,11 +2,16 @@ from django.shortcuts import render
 
 # Create your views here.
 from django.http import HttpResponse
+from .models import Question
+
 import requests
 
-
 def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+    latest_question_list = Question.objects.order_by('-pub_date')[:5]
+    output = ', '.join([q.question_text for q in latest_question_list])
+    return HttpResponse(output)
+# def index(request):
+#     return HttpResponse("Hello, world. You're at the polls index.")
 
 def say_hello(request):
     return render(request, 'hello.html', {'name': 'DaGreat!'})
