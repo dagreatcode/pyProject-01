@@ -24,13 +24,9 @@ Acceptance Criteria
 
 ![pyProject-01](https://img.shields.io/github/languages/top/dagreatcode/pyProject-01)
 
-![https://pytthontest.herokuapp.com/](https://img.shields.io/static/v1?label=www.&message=covid-way&color=green)
-
 ![MIT](https://img.shields.io/github/license/dagreatcode/pyProject-01)
 
 ![repo-size](https://img.shields.io/github/repo-size/dagreatcode/pyProject-01)
-
-![lines](https://img.shields.io/tokei/lines/github/dagreatcode/pyProject-01)
 
 ## Installation
 
