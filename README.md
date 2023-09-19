@@ -33,6 +33,32 @@ Acceptance Criteria
 ```
 ```
 
+## Commands
+
+```
+python manage.py migrate
+python manage.py runserver
+gunicorn app:app
+pip install -r requirements.txt
+python -m pip install --upgrade pip
+virtualenv .env
+source .env/bin/activate
+
+sudo pip3 install virtualenvwrapper
+
+## Create virtual environment
+python3 -m venv dev-env
+
+# Create virtual environment
+python3 -m venv dev-env
+# Current virtual environment
+# On Linux or MacOS
+echo $VIRTUAL_ENV
+
+pip3 freeze > requirements.text
+python3 -m pip3 install gunicorn
+```
+ToDo: Add PostgreSQL Database
 ## Usage
 
 ```
